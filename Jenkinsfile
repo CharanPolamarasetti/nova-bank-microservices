@@ -4,7 +4,7 @@ pipeline {
     tools {
         // Use SonarScanner CLI for non-Java projects (HTML/JS/CSS)
         // Ensure 'sonar-scanner' is configured in Jenkins Global Tool Configuration
-        sonarScanner 'sonar-scanner' 
+        sonarScanner 'novabankfrontendsonar'
     }
     
     environment {
@@ -37,7 +37,7 @@ pipeline {
             steps {
                 withSonarQubeEnv ('sonar') {
                     // Run SonarScanner for frontend files instead of Maven
-                    sh 'sonar-scanner -Dsonar.projectKey=devproject-frontend -Dsonar.sources=frontend/src'
+                    sh 'sonar-scanner -Dsonar.projectKey=novabank-frontend -Dsonar.sources=frontend/src'
                 }
             }
         }
