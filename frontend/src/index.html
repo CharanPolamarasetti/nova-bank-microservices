@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Bank - Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Nova Bank</h1>
+
+        <div class="tabs">
+            <button id="loginTabBtn" class="tab-btn active">Login</button>
+            <button id="registerTabBtn" class="tab-btn">Register</button>
+        </div>
+
+        <form id="loginForm" class="auth-form">
+            <label>Email</label>
+            <input type="email" id="loginEmail" required>
+            <label>Password</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="registerForm" class="auth-form hidden">
+            <label>Full Name</label>
+            <input type="text" id="regFullName" required>
+            <label>Email</label>
+            <input type="email" id="regEmail" required>
+            <label>Phone Number</label>
+            <input type="text" id="regPhone" required>
+            <label>Password</label>
+            <input type="password" id="regPassword" minlength="8" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="authMessage" class="message"></p>
+
+        <p class="hint">Demo login: asha.rao@example.com / Password123!</p>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>
