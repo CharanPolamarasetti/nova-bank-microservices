@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     def scannerHome = tool 'novabankfrontendsonar'
-                    withSonarQubeEnv ('novabankfrontendsonar') {
+                    withSonarQubeEnv ('novabanksonarqube') {
                         sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=novabank-frontend -Dsonar.sources=src/"
                     }
                 }
