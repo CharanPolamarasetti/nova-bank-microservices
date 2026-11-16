@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        ECR_REPO = '285065163560.dkr.ecr.us-east-1.amazonaws.com/novabank/frontend'
+        ECR_REPO = '285065163560.dkr.ecr.ap-south-1.amazonaws.com/novabank/frontend'
     }
 
     stages {
