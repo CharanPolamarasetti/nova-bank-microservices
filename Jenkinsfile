@@ -46,7 +46,7 @@ pipeline {
             parallel {
                 stage('Nexus Artifacts') {
                     steps {
-                        nexusArtifactUploader artifacts: [[artifactId: 'account-service', classifier: '', file: 'target/account-service-1.0.0.jar', type: 'jar']], credentialsId: 'novabankNexustoken', groupId: 'com.novabank', nexusUrl: '3.110.223.61:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'novabank-account-service-repo', version: '1.0.0'
+                        nexusArtifactUploader artifacts: [[artifactId: 'account-service', classifier: '', file: 'target/account-service-1.0.0.jar', type: 'jar']], credentialsId: 'novabankNexustoken', groupId: 'com.novabank', nexusUrl: '15.207.55.202:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'novabank-account-service-repo', version: '1.0.0'
                     }
                 }
                 stage('Docker') {
