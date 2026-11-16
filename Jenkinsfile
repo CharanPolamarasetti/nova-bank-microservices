@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        ECR_REPO = '285065163560.dkr.ecr.us-east-1.amazonaws.com/novabank/account-service'
+        ECR_REPO = '285065163560.dkr.ecr.ap-south-1.amazonaws.com/novabank/account-service'
     }
 
     stages {
